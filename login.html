@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="theme-toggle">
+        <button id="themeButton">Switch to Dark Mode</button>
+    </div>
+    <div class="container">
+        <div class="right-section">
+            <div class="form-intro">
+                <h1>Welcome Back!</h1>
+                <p>Please login to your account or sign up for a new one.</p>
+            </div>
+            <div class="form-container">
+                <div class="form-header">
+                    <button id="loginBtn" class="toggle-btn active">Login</button>
+                    <div class="separator"></div>
+                    <button id="signupBtn" class="toggle-btn">Sign Up</button>
+                </div>
+                
+                <form id="loginForm" class="form-content" onsubmit="return validateLogin()">
+                    <input type="text" id="username" placeholder="Email or Username" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <a href="#" id="forgotPassword">Forgot Password?</a>
+                    <button type="submit" class="submit-btn">Login</button>
+                </form>
+                <form id="signupForm" class="form-content hidden">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <input type="password" placeholder="Confirm Password" required>
+                    <button type="submit" class="submit-btn">Sign Up</button>
+                </form>
+                <form id="forgotForm" class="form-content hidden">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="submit-btn">Reset Password</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+    <script>
+        function validateLogin() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Example credentials check
+            const validUsername = "user";
+            const validPassword = "User@5456";
+
+            if (username === validUsername && password === validPassword) {
+                window.location.href = "player2.py";
+                return false; // Prevent form submission
+            } else {
+                alert("Invalid username or password");
+                return false; // Prevent form submission
+            }
+        }
+    </script>
+</body>
+</html>

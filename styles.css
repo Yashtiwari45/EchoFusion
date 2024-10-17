@@ -1,0 +1,396 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+header {
+    background-color: #004c99;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ddd;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    padding: 8px 12px;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    width: 250px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+body.dark-mode .search-container input[type="text"] {
+    border-color: #666;
+    background-color: #444;
+    color: #e0e0e0;
+}
+
+.search-container button {
+    background-color: #ccc;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: #bbb;
+}
+
+body.dark-mode .search-container button {
+    background-color: #555;
+}
+
+body.dark-mode .search-container button:hover {
+    background-color: #444;
+}
+
+nav.options {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+nav.options button {
+    background-color: #004c99;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+nav.options button i {
+    margin-right: 8px;
+}
+
+nav.options button:hover {
+    background-color: #003366;
+}
+
+body.dark-mode nav.options button {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode nav.options button:hover {
+    background-color: #121212;
+}
+
+main {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+body.dark-mode main {
+    background-color: #333;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.station-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.info-container {
+    width: 48%;
+}
+
+.arrival-info h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #004c99;
+    transition: color 0.3s;
+}
+
+body.dark-mode .arrival-info h2 {
+    color: #bb86fc;
+}
+
+.arrival-info h2 span {
+    font-weight: bold;
+}
+
+.crowd-density h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.crowd-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.crowd-bar div {
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    font-weight: bold;
+    transition: width 0.5s ease;
+}
+
+.optimal-crowd {
+    background-color: #4CAF50;
+}
+
+.minimal-crowd {
+    background-color: #FFC107;
+}
+
+.maximal-crowd {
+    background-color: #F44336;
+}
+
+body.dark-mode .crowd-bar {
+    background-color: #444;
+}
+
+body.dark-mode .optimal-crowd {
+    background-color: #388e3c;
+}
+
+body.dark-mode .minimal-crowd {
+    background-color: #ffa000;
+}
+
+body.dark-mode .maximal-crowd {
+    background-color: #c62828;
+}
+
+.facilities {
+    width: 48%;
+}
+
+.facilities h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.facility {
+    font-size: 1.1em;
+    background-color: #f0f2f5;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.facility i {
+    margin-right: 10px;
+    color: #004c99;
+}
+
+body.dark-mode .facility {
+    background-color: #333;
+}
+
+body.dark-mode .facility i {
+    color: #bb86fc;
+}
+
+footer {
+    background-color: #004c99;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+body.dark-mode footer {
+    background-color: #1e1e1e;
+}
+
+.animation-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.animated-shape {
+    width: 250px;
+    height: 250px;
+    background-color: rgba(0, 76, 153, 0.4);
+    border-radius: 50%;
+    position: absolute;
+    bottom: -125px;
+    left: -50px;
+    animation: moveShape 20s infinite linear;
+}
+
+@keyframes moveShape {
+    0% { transform: translateX(0) translateY(0); }
+    50% { transform: translateX(150%) translateY(-150%); }
+    100% { transform: translateX(0) translateY(0); }
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+body.dark-mode .modal-content {
+    background-color: #2c2c2c;
+    color: #e0e0e0;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    color: #004c99;
+    transition: color 0.3s;
+}
+
+body.dark-mode .modal-content h2 {
+    color: #bb86fc;
+}
+
+.modal-content label {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.modal-content input[type="text"], 
+.modal-content select {
+    width: 75%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+body.dark-mode .modal-content input[type="text"],
+body.dark-mode .modal-content select {
+    background-color: #444;
+    border-color: #666;
+    color: #e0e0e0;
+}
+
+.modal-content button {
+    background-color: #004c99;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.modal-content button:hover {
+    background-color: #003366;
+}
+
+body.dark-mode .modal-content button {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .modal-content button:hover {
+    background-color: #121212;
+}
+
+/* Toggle Button Styles */
+.mode-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+body.dark-mode .mode-toggle {
+    color: #bb86fc;
+}
