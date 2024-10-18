@@ -46,6 +46,19 @@ It utilizes `librosa` and `pydub` to carry out efficient manipulations on audio,
 
 --
 
+
+## Output(current progress)
+
+### 1st Page [Login]
+![Screenshot 2024-10-18 112224](https://github.com/user-attachments/assets/7ec21a62-2051-493a-ab4a-e457b031d0ce)
+
+### 2nd page [Home]
+![Screenshot 2024-10-17 125414](https://github.com/user-attachments/assets/8ac80ec3-bee8-4fc9-8dd2-7abd612c206d)
+
+
+
+
+
 ### Future Plans 
 1. **Rich Audio Effects Library**
    More Effects: In addition to the already wide variety of effects like distortion, flanger, echo, and pitch shifting, more effects are added so that the users have even more choices for creativity.
@@ -69,13 +82,4 @@ It utilizes `librosa` and `pydub` to carry out efficient manipulations on audio,
 
 
 --
-
-## Output(current progress)
-
-### 1st Page [Login]
-![Screenshot 2024-10-18 112224](https://github.com/user-attachments/assets/7ec21a62-2051-493a-ab4a-e457b031d0ce)
-
-### 2nd page [Home]
-![Screenshot 2024-10-17 125414](https://github.com/user-attachments/assets/8ac80ec3-bee8-4fc9-8dd2-7abd612c206d)
-
 
