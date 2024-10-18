@@ -1,11 +1,11 @@
-# Music-Effect-converter
+# EchoFusion
 
 Below, you will find a step-by-step overview of the application, focusing on the specific features, functionalities, and technical details:
 
-### Music Effect Converter App
+### EchoFusion App
 
 #### Description
-The Music Effect Converter app permits the uploading of audio files and adding many audio effects for listening purposes. The converter supports all common formats, such as MP3 and WAV, and offers modern design and solid functionality.
+The EchoFusionr app permits the uploading of audio files and adding many audio effects for listening purposes. The converter supports all common formats, such as MP3 and WAV, and offers modern design and solid functionality.
 
 #### Main Features
 1. **Audio Upload** :
